@@ -31,9 +31,9 @@ def make_kb(buttons: list, lang: str = "ru") -> ReplyKeyboardMarkup:
 
 @router.message(F.text.in_([text_data['ru']['btn_cancel'], text_data['en']['btn_cancel']]))
 async def cancel_form(message: Message, state: FSMContext):
+    data = await state.get_data()
+    lang = data.get("user_lang", "ru")
     await state.clear()
-    user_lang = message.from_user.language_code
-    lang = user_lang if user_lang in ['ru', 'en'] else 'ru'
     from handlers.common import get_main_menu, get_text
     await message.answer(get_text(lang, "main_menu"), reply_markup=get_main_menu(lang))
 
