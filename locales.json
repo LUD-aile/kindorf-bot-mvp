@@ -1,4 +1,4 @@
-{
+{{
   "ru": {
     "welcome": "🚀 **KINDORF IS OFFICIALLY LAUNCHED**\n\nKINDORF — это международная молодежная организация, объединяющая людей из разных стран и сфер для совместного создания, развития и реализации реальных проектов.\n\n✨ Наша команда работает по 9 направлениям:\n📊 Finance, 👥 HR, ⚖️ Legal, 🔍 Research, 🤝 Partnerships, 🎨 Design, 📱 SMM, 💻 IT и 👔 Project Management.\n\n⚠️ **ВАЖНОЕ ПРЕДУПРЕЖДЕНИЕ:**\nМы объединяем людей из самых разных сфер, но наш проект временно НЕ принимает направления, связанные с естественными науками (биология, химия, медицина и т.д.). Пожалуйста, учитывайте это перед подачей заявки.\n\nВыберите цель вашего визита:",
     "about": "🚀 **KINDORF IS OFFICIALLY LAUNCHED**\n\nKINDORF — это международная молодежная организация, объединяющая людей из разных стран для создания реальных проектов. Вы можете прийти к нам с идеей, интересом к определенной сфере, желанием получить реальный опыт или стать частью международной команды.\n\n🌐 **НАШИ НАПРАВЛЕНИЯ (9 сфер):**\n• Finance (Финансы)\n• HR (Управление персоналом)\n• Legal (Юриспруденция)\n• Research (Исследования)\n• Partnerships (Партнерство)\n• Design (Дизайн)\n• SMM (Маркетинг в соцсетях)\n• IT (Разработка)\n• Project Management (Управление проектами)\n\n⚠️ *Напоминание: мы НЕ работаем с биологией, химией и медициной.*\n\n📱 **НАШИ ПЛАТФОРМЫ:**\n• [Website](https://swwixzy.github.io/website-kindorff/)\n• [TikTok](https://tiktok.com)\n• [Instagram](https://instagram.com)\n\n👤 Основатель: [Виктория](tg://user?id=1489336036)\nВы можете связаться с ней по любым вопросам.",
@@ -15,8 +15,7 @@
     "q_country": "Из какой ты страны?",
     "q_main_dir": "Выбери свое основное направление:",
     "q_sub_dir": "Укажи дополнительные сферы деятельности (выбери из списка или напиши текстом):",
-    "q_exp": "Какой у тебя уровень опыта? (Junior, Middle, Senior):",
-    "q_skills": "Опиши свои ключевые навыки и стек технологий:",
+    "q_exp": "Расскажите о своем опыте:",
     "q_interests": "Чем бы ты хотел заниматься внутри KINDORF?",
     "q_time": "Сколько времени примерно ты готов уделять проектам в неделю?",
     "team_success": "🎉 Спасибо! Твоя анкет успешно отправлена координаторам.\n\nМы изучим твои навыки и свяжемся, если твой профиль совпадет с нашими текущими задачами.",
@@ -47,8 +46,7 @@
     "q_country": "Which country are you from?",
     "q_main_dir": "Choose your main direction:",
     "q_sub_dir": "Specify additional fields of activity (choose from the list or type text):",
-    "q_exp": "What is your experience level? (Junior, Middle, Senior):",
-    "q_skills": "Describe your key skills and tech stack:",
+    "q_exp": "Tell us about your experience:",
     "q_interests": "What would you like to do within KINDORF?",
     "q_time": "How much time are you ready to dedicate to projects per week?",
     "team_success": "🎉 Thank you! Your application has been successfully sent to the coordinators. We will get in touch if your profile matches our tasks.",
@@ -64,4 +62,3 @@
     "sub_1": "SMM", "sub_2": "QA Testing", "sub_3": "Analytics", "sub_4": "Copywriting", "sub_5": "No additional spheres"
   }
 }
-
