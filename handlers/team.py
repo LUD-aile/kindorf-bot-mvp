@@ -18,7 +18,6 @@ class TeamForm(StatesGroup):
     main_direction = State()
     additional_directions = State()
     experience = State()
-    skills = State()
     interests = State()
     availability = State()
 
@@ -94,14 +93,6 @@ async def process_experience(message: Message, state: FSMContext):
     data = await state.get_data()
     lang = data.get("user_lang", "ru")
     await state.update_data(experience=message.text)
-    await state.set_state(TeamForm.skills)
-    await message.answer(text_data[lang]["q_skills"], reply_markup=make_kb([], lang))
-
-@router.message(TeamForm.skills)
-async def process_skills(message: Message, state: FSMContext):
-    data = await state.get_data()
-    lang = data.get("user_lang", "ru")
-    await state.update_data(skills=message.text)
     await state.set_state(TeamForm.interests)
     await message.answer(text_data[lang]["q_interests"], reply_markup=make_kb([], lang))
 
@@ -115,9 +106,11 @@ async def process_interests(message: Message, state: FSMContext):
 
 @router.message(TeamForm.availability)
 async def process_availability(message: Message, state: FSMContext):
+    await state.update_data(availability=message.text)
     user_data = await state.get_data()
-    await state.clear()
     lang = user_data.get("user_lang", "ru")
+    await state.clear()
+    
     user_username = f"@{message.from_user.username}" if message.from_user.username else "No username"
 
     notification_text = (
@@ -127,9 +120,8 @@ async def process_availability(message: Message, state: FSMContext):
         f"Main direction: {user_data['main_direction']}\n"
         f"Additional directions: {user_data['additional_directions']}\n"
         f"Experience: {user_data['experience']}\n"
-        f"Skills: {user_data['skills']}\n"
         f"Interested in: {user_data['interests']}\n"
-        f"Availability: {message.text}\n\n"
+        f"Availability: {user_data['availability']}\n\n"
         f"Contact Link: {user_username}"
     )
 
